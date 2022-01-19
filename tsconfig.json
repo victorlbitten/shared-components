@@ -18,6 +18,9 @@
       "shared-components": [
         "dist/shared-components/shared-components",
         "dist/shared-components"
+      ],
+      "design-system": [
+        "node_modules/design-system"
       ]
     },
     "target": "es2017",
