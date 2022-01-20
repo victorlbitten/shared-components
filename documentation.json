@@ -6,17 +6,80 @@
     "interceptors": [],
     "classes": [],
     "directives": [],
-    "components": [],
+    "components": [
+        {
+            "name": "ExampleComponent",
+            "id": "component-ExampleComponent-76c1c8eadb7640682c12a7369683e79b9448be5b0a7646b2e3b410d6e9412be460a42d7d89518a803fea28e48399d5f940d11a489bde6b599b4997386366834f",
+            "file": "projects/shared-components/src/lib/Example/example.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-example",
+            "styleUrls": [
+                "./example.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./example.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-example',\n  templateUrl: './example.component.html',\n  styleUrls: ['./example.component.css']\n})\nexport class ExampleComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./example.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>test works!</p>\n"
+        }
+    ],
     "modules": [
         {
             "name": "SharedComponentsModule",
-            "id": "module-SharedComponentsModule-54d86250a3bfb058c02898806ab26cea2ba7a9607cf6c2de986ace9a7f7003a83d4c57f1f6102c918da353add1b8908071e5129314ac01d6cd09c223d4441e3b",
+            "id": "module-SharedComponentsModule-768b807ebcb43852d945d750b1d3fc76343a6fe9cfbd7ecc7a1b2ad1ee0b3b743df869cb255642d616242d44e9ce27bf67895ba89a5e7722d1e73f3670269588",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/shared-components/src/lib/shared-components.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\n\n\n\n@NgModule({\n  declarations: [\n  ],\n\n  imports: [\n  ],\n\n  exports: [\n  ]\n\n})\n\n\n\nexport class SharedComponentsModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { ExampleComponent } from './Example/example.component';\n\n\n\n@NgModule({\n  declarations: [\n  \n    ExampleComponent\n  ],\n\n  imports: [\n  ],\n\n  exports: [\n  ]\n\n})\n\n\n\nexport class SharedComponentsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -24,7 +87,11 @@
                 },
                 {
                     "type": "declarations",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "ExampleComponent"
+                        }
+                    ]
                 },
                 {
                     "type": "imports",
@@ -58,6 +125,16 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Example.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -65,6 +142,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Example.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\n    props: args\n})"
             }
         ],
         "functions": [],
@@ -91,6 +178,28 @@
                     "deprecationMessage": "",
                     "type": "literal type"
                 }
+            ],
+            "stories/Example.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Example.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Example.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\n    props: args\n})"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -102,6 +211,15 @@
         "count": 0,
         "status": "low",
         "files": [
+            {
+                "filePath": "projects/shared-components/src/lib/Example/example.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ExampleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
             {
                 "filePath": "projects/shared-components/src/test.ts",
                 "type": "variable",
@@ -118,6 +236,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Example.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Example.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
